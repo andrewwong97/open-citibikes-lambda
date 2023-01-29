@@ -24,8 +24,12 @@ class handler(BaseHTTPRequestHandler):
     def do_GET(self):
         string_builder = []
         open_docks = self.get_docks_available(MY_STATIONS)
-        for station_name, num_docks in open_docks.items():
-            string_builder.append(f"{station_name} has {num_docks} open docks\n")
+        for i, (station_name, num_docks) in enumerate(open_docks.items()):
+            if i < len(open_docks):
+                string_builder.append(f"{station_name} has {num_docks} open docks\n")
+            else:
+                string_builder.append(f"{station_name} has {num_docks} open docks")
+
         formatted_response = ''.join(string_builder)
 
         self.send_response(200)
