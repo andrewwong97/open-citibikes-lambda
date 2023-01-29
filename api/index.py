@@ -33,7 +33,7 @@ class handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(formatted_response.encode('utf-8'))
 
-    def get_docks_available(station_ids):
+    def get_docks_available(self, station_ids):
         api_url = "https://gbfs.citibikenyc.com/gbfs/en/station_status.json"
         response = requests.get(api_url)
         station_statuses = response.json()["data"]["stations"]
