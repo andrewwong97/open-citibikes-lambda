@@ -23,7 +23,7 @@ STATION_SHORTHAND = {
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
         string_builder = []
-        open_docks = get_docks_available(MY_STATIONS)
+        open_docks = self.get_docks_available(MY_STATIONS)
         for station_name, num_docks in open_docks:
             string_builder.append(f"{station_name} has {num_docks} open docks\n")
         formatted_response = ''.join(string_builder)
