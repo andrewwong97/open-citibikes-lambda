@@ -1,7 +1,7 @@
 # open-citibikes-lambda
-Quick Python lambda to get the open Citibikes near me via Siri invocation. 
+Quick Python lambda to get the open Citibikes near me via Siri invocation. I wrote this primarily to get a quick summary of the Citibike dock availability near my area. I'm happy to extend this functionality if anyone is interested, feel free to create a ticket in the repo.
 
-## How to make a request
+## Request
 Send an HTTP GET to `http://open-citibikes-lambda.vercel.app/api`
 
 ## Response
