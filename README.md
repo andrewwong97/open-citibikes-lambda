@@ -6,6 +6,11 @@ I wrote this primarily to get a quick summary of the Citibike dock availability 
 ## Request
 Send an HTTP GET to `http://open-citibikes-lambda.vercel.app/api`
 
+Example: run the below command in Terminal.
+```
+curl https://open-citibikes-lambda.vercel.app/api
+``` 
+
 ## Response
 Response is `text/plain` and will return the number of open Citibike docks using the hardcoded stations in [api/index.py](https://github.com/andrewwong97/open-citibikes-lambda/blob/main/api/index.py).
 
