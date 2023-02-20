@@ -2,7 +2,7 @@ import requests
 import math
 import json
 
-MY_STATIONS = {'45 Rd & 11 St','46 Ave & 5 St','Vernon Blvd & 50 Ave','Jackson Ave & 46 Rd','45 Ave & 21 St'}
+MY_STATIONS = {'45 Rd & 11 St','46 Ave & 5 St','Vernon Blvd & 50 Ave','Jackson Ave & 46 Rd','45 Ave & 21 St','48 Ave & 5 St'}
 
 def haversine(lat1, lon1, lat2, lon2):
 	R = 6371 # radius of Earth in km
