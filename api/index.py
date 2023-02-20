@@ -8,7 +8,8 @@ MY_STATIONS = {
     '3124': '46 Ave & 5 St',
     '3119': 'Vernon Blvd & 50 Ave',
     '3121': 'Jackson Ave & 46 Rd',
-    '4674': '45 Ave & 21 St'
+    '4674': '45 Ave & 21 St',
+    '3122': '48 Ave & 5 St'
 }
 
 # official station name to shorthand name
@@ -18,7 +19,9 @@ STATION_SHORTHAND = {
     'Vernon Blvd & 50 Ave': '7 Train',
     'Jackson Ave & 46 Rd': 'Trader Joes',
     '45 Ave & 21 St': 'Court Square N',
+    '48 Ave & 5 St': '48th Ave'
 }
+
 
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
