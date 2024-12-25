@@ -18,9 +18,3 @@ class handler(BaseHTTPRequestHandler):
         self.send_header('Content-type', 'text/plain')
         self.end_headers()
         self.wfile.write(formatted_response.encode('utf-8'))
-        
-if __name__ == '__main__':
-    from http.server import HTTPServer
-    server = HTTPServer(('localhost', 8000), handler)
-    print('Starting server on http://localhost:8000, use <Ctrl-C> to stop')
-    server.serve_forever()
