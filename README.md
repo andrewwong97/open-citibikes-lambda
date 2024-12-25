@@ -1,7 +1,7 @@
 # open-citibikes-lambda
-Quick Python lambda to get the open Citibikes near me via Siri invocation. Source of this data is from Citibike GBFS available here https://citibikenyc.com/system-data. 
+Proof of concept serverless app to get the open Citibikes based on lat/long pair. The Citibike GBFS source data is available at https://citibikenyc.com/system-data.
 
-I wrote this primarily to get a quick summary of the Citibike dock availability near my area. I'm happy to extend this functionality if anyone is interested, feel free to create a ticket in the repo.
+This can be invoked from any client. Siri shortcut is my client of choice, which best supports `text/plain`.
 
 ## Request
 Send an HTTP GET to `http://open-citibikes-lambda.vercel.app/api`
